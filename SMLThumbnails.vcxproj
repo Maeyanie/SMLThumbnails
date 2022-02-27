@@ -147,8 +147,8 @@
       <PreprocessorDefinitions>NDEBUG;SMLTHUMBNAILS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>E:\Devel\SMLThumbnails\glew-2.1.0\include;E:\Devel\SMLThumbnails\glut-3.7;E:\Devel\SMLThumbnails\glfw-3.3.6.bin.WIN64\include</AdditionalIncludeDirectories>
-      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -161,11 +161,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="crc32c.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="SMLThumbnails.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\SMLViewer\SML.cpp" />
+    <ClCompile Include="crc32c.c" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="SMLThumbnails.cpp" />
     <ClCompile Include="shaders.cpp" />
